@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Legal Text Viewer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Legal Text Viewer</h1>
+		<form>
+			<label for="legalText">القوانين</label>
+			<select id="legalText">
+				<option value="obligations-and-contracts">ظهير الالتزامات والعقود</option>
+				<option value="penalCode">قانون المسطرة المدنية</option>
+				<option value="commerci">قانون المسطرة الجنائية</option>
+				<option value="penalCode">قانون الجنائي</option>
+				<option value="penalCode">قانون الأسرة</option>
+				<option value="penalCode">قانون التحفيظ العقاري</option>
+				<option value="penalCode">مدونة الحقوق العينية</option>
+				<option value="penalCode">مدونة السير على الطرق</option>
+				<option value="penalCode">مدونة التجارة</option>
+				<option value="penalCode">مدونة الشغل</option>
+				<option value="penalCode">شركات المساهمة</option>
+				<option value="penalCode">دستور المملكة</option>
+				<option value="penalCode">مدونة الأوقاف</option>
+				<option value="penalCode">الجماعات</option>
+				<option value="penalCode">الجهات</option>
+				<option value="penalCode">العمالات والأقاليم</option>
+				<option value="penalCode">قانون حماية المستهلك</option>
+				<option value="penalCode">قانون الجنسية</option>
+				<option value="penal">مؤسسات الائتمان والهيئات المعتبرة في حكمها</option>
+
+			</select>
+			<label for="chapterNumber">الفصل او المادة</label>
+			<input type="number" id="chapterNumber" name="chapterNumber">
+			<button type="button" onclick="showChapter()">بحث</button>
+		</form>
+		<div id="chapterText"></div>
+
+
+
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
